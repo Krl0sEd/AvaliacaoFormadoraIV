@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f6f9;
+}
+
+header {
+    background-color: #002848;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.header img {
+    width: 100px;
+    height: auto;
+}
+
+.topo {
+    text-align: center;
+    margin: 40px 0 30px;
+}
+
+.topo h1 {
+    color: #002848;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.topo p {
+    font-size: 16px;
+    color: #666;
+}
+
+.main-conteudo {
+    width: 95%;
+    max-width: 1200px; /* Largura maior para caber a tabela */
+    margin: 0 auto 50px;
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* --- ESTILO DAS TABELAS (NOVO) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden; /* Para arredondar as bordas da tabela */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+thead tr {
+    background-color: #002848; /* Cabeçalho Azul Escuro */
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 15px 15px;
+    font-size: 14px;
+}
+
+/* Linhas zebradas para facilitar leitura */
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #002848;
+}
+
+tbody tr:hover {
+    background-color: #e2e6ea; /* Efeito ao passar o mouse */
+    transition: background-color 0.2s;
+}
+
+/* Estilo para formulários dentro da tabela (botões e selects) */
+.form-status {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.form-status select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-status button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #008037; /* Verde */
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.form-status button:hover {
+    background-color: #005a26;
+}

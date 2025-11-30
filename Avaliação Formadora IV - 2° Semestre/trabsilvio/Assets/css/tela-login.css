@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f6f9; /* Fundo levemente cinza */
+}
+
+header {
+    background-color: #002848;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.header img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.topo {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.topo h1 {
+    color: #002848;
+    font-size: 48px; /* Ajustado para não ficar gigante */
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.topo p {
+    font-size: 16px;
+    color: #666;
+}
+
+.main-conteudo {
+    width: 90%;
+    max-width: 420px;
+    margin: 0 auto 50px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 40, 72, 0.1); /* Sombra elegante */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 600;
+    color: #002848;
+    margin-bottom: 5px;
+}
+
+.input-padrao {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.input-padrao:focus {
+    outline: none;
+    border-color: #002848;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(0, 40, 72, 0.1);
+}
+
+.botao-cadastro {
+    color: white;
+    background-color: #002848;
+    width: 100%; /* Botão largura total fica mais bonito no login */
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao-cadastro:hover {
+    background-color: #004070;
+}
+
+.botao-cadastro:active {
+    transform: scale(0.98);
+}

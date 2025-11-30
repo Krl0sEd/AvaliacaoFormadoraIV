@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Papelaria</title>
+    <link rel="stylesheet" href="../Assets/css/tela-cadastro.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="../Assets/img/papelaria 2.png" alt="Logo Papelaria" href>
+        </div>
+    </header>
+    
+    <div class="topo">
+        <h1>Cadastre-se</h1>
+        <p>Preencha os dados abaixo para cadastrar-se</p>
+    </div>
+    
+    <main class="main-conteudo">
+        <form action="/trabsilvio/Assets/php/cadastro.php" method="post">
+
+            <label>
+                <i class="bi bi-person"></i> Nome completo:
+                <input class="input-padrao" type="text" name="nome" id="nome" placeholder="Digite seu nome" required
+                    pattern="[A-Za-zÀ-ÿ\s]+">
+            </label>
+
+            <label>
+                <i class="bi bi-envelope"></i> E-mail:
+                <input class="input-padrao" type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </label>
+
+            <label>
+                <i class="bi bi-card-text"></i> CPF:
+                <input class="input-padrao" type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" maxlength="14" required
+                    oninput="formatarCPF(this)">
+            </label>
+
+            <label>
+                <i class="bi bi-telephone"></i> Telefone:
+                <input class="input-padrao" type="tel" name="telefone" id="telefone" placeholder="(XX) XXXXX-XXXX" maxlength="15" required
+                    oninput="formatarTelefone(this)">
+            </label>
+
+            <label>
+                <i class="bi bi-lock"></i> Senha:
+                <input class="input-padrao" type="password" name="senha" id="senha" placeholder="Digite sua senha" required
+                    minlength="6">
+            </label>
+
+            <!-- CHECKBOX ENTREGADOR -->
+            <label class="entregador">
+                <input type="checkbox" name="cadastroEntregador" id="cadastroEntregador">
+                <span>Desejo me cadastrar como entregador</span>
+            </label>
+
+            <!-- CAMPOS DO ENTREGADOR -->
+            <div id="campos-entregador">
+                <label>
+                    <i class="bi bi-card-text"></i> CNH:
+                    <input class="input-padrao" type="text" name="cnh" id="cnh"
+                        placeholder="Digite sua CNH" maxlength="11"
+                        oninput="formatarCNH(this)">
+                </label>
+
+                <label>
+                    Qual o tipo de veículo:
+                    <select class="input-padrao placeholder-select" id="veiculo" name="veiculo">
+                        <option value="" disabled selected hidden>Escolha seu veículo</option>
+                        <option value="carro">Carro</option>
+                        <option value="moto">Moto</option>
+                        <option value="bicicleta">Bicicleta</option>
+                    </select>
+                </label>
+            </div>
+
+            <button class="botao-cadastro" type="submit">CADASTRAR</button>
+
+        </form>
+
+        <div class="login-link">
+            <br><br>Já possui cadastro? <a href="tela-login.html"><u>faça login</u></a>
+        </div>
+    </main>
+
+    <script src="../Assets/js/tela-cadastro.js"></script>
+</body>
+
+</html>
