@@ -21,4 +21,12 @@ O objetivo desta atividade é demonstrar a capacidade do aluno em:
 
 Este repositório funciona como **registro acadêmico** da atividade avaliativa da disciplina Formadora IV e demonstra, de forma prática, o conteúdo aprendido no 2º semestre do curso de ADS.
 
+## 👨‍💻 Autor
+
+**Carlos Eduardo de Oliveira Bucazio**
+- 💻 Estudante de **Análise e Desenvolvimento de Sistemas** | Foco em **DevOps e Infraestrutura**
+- 📧 **Email**: [cbucazio@gmail.com](mailto:cbucazio@gmail.com)
+- 🌐 **GitHub**: [Krl0sEd](https://github.com/Krl0sEd)
+- 🧑‍💼 **Linkedin**: [linkedin.com/in/carlos-eduardo-de-oliveira-bucazio-516a7937a](https://www.linkedin.com/in/carlos-eduardo-de-oliveira-bucazio-516a7937a)
+
 ---
